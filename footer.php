@@ -1,4 +1,4 @@
-<footer class="bg-light py-3">
+<footer class="bg-light py-3   ">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
@@ -28,6 +28,6 @@
 </footer>
 
 	</div>
-	<!-- <?php wp_footer(); ?> -->
+
 </body>
 </html>

@@ -1,28 +1,3 @@
-/* header */
-
-.navbar-nav{
-    list-style-type: none;
-    color:beige;
+main{
+    padding-top:80px;
 }
-.navbar-nav a{
-  
-    color:beige;
-}
-.header{
-    background:linear-gradient(125deg, #FFCC00, #fcdd5f,#ffe375);
-}
-.hero{
-    height:670px;
-    border :1px solid red;
-    padding: 20px;
-}
-
-/* daily astro */
-
-
-.img-fluid{
-   border-radius: 50%;
-}
-.img-fluid:hover{
-    background-color: red;
- }
