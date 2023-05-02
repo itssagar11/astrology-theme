@@ -1,3 +1,9 @@
+
+body{
+}
+    /* header */
+
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@1,700&family=Courgette&family=Dancing+Script&family=Edu+NSW+ACT+Foundation:wght@600&family=Josefin+Sans&family=Zeyada&display=swap');
 .navbar-nav{
     list-style-type: none;
     color:beige;
@@ -6,11 +12,89 @@
   
     color:beige;
 }
-.header{
-    background:linear-gradient(125deg, #FFCC00, #fcdd5f,#ffe375);
+.main_header{
+    margin: 0px;
+    background:linear-gradient(150deg,#000000,#151030,#ce7546);
 }
 .hero{
     height:670px;
-    border :1px solid red;
+    position: relative;
     padding: 20px;
 }
+.navbar{
+    margin-top: -33px;
+  
+}
+
+.link {
+    padding: 1rem 1.5rem; 
+    text-decoration: none;/* increase padding */
+  }
+  .menu-item >a{
+    font-size: 25px;
+    padding-left: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#cfcdd3;
+  }
+.mantra{
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    font-size: 80px;
+    text-align: center;
+    margin: auto;
+    font-style: oblique;
+    color: #ffffff;
+    font-family: 'Albert Sans', sans-serif;
+    font-family: 'Courgette', cursive;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Zeyada', cursive;
+}
+
+.sub-title{
+    font-family: 'Albert Sans', sans-serif;
+font-family: 'Courgette', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Zeyada', cursive;
+color: beige;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+.device{
+   
+    animation: rotation 15s infinite linear;
+    width: 80%;
+}
+
+.hero-1{
+   justify-content: center;
+   margin-top: 10%;
+}
+
+/* daily astro */
+
+
+.img-fluid{
+   border-radius: 50%;
+}
+.img-fluid:hover{
+    background-color: red;
+ }
