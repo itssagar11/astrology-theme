@@ -3,7 +3,7 @@ body{
 }
     /* header */
 
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@1,700&family=Courgette&family=Dancing+Script&family=Edu+NSW+ACT+Foundation:wght@600&family=Josefin+Sans&family=Zeyada&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@1,700&family=Courgette&family=Dancing+Script&family=Edu+NSW+ACT+Foundation:wght@600&family=Josefin+Sans&family=Ubuntu:wght@300&family=Zeyada&display=swap');
 .navbar-nav{
     list-style-type: none;
     color:beige;
@@ -26,6 +26,7 @@ body{
   
 }
 
+
 .link {
     padding: 1rem 1.5rem; 
     text-decoration: none;/* increase padding */
@@ -41,7 +42,7 @@ body{
     animation-name: fadeIn;
     animation-duration: 4s;
     animation-fill-mode: forwards;
-    font-size: 80px;
+    font-size: 60px;
     text-align: center;
     margin: auto;
     font-style: oblique;
@@ -61,6 +62,7 @@ font-family: 'Edu NSW ACT Foundation', cursive;
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Zeyada', cursive;
 color: beige;
+font-size: 30px;
 }
 @keyframes fadeIn {
     from {
@@ -91,10 +93,66 @@ color: beige;
 
 /* daily astro */
 
-
+.daily-astro-container{
+   
+}
 .img-fluid{
    border-radius: 50%;
 }
 .img-fluid:hover{
     background-color: red;
  }
+ .card-astro{
+    width: 180px; height: 160px; 
+    border:none;
+ }
+
+
+
+
+
+
+ @media only screen and (max-width: 650px){
+    .card-astro{
+        width: 100px; height: 160px; 
+        border:none;
+     }
+ }
+
+  /* blog */
+  .blog-card{
+    margin-top: 100px;
+  }
+  .h5-limit{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: ;
+  }
+
+  /* review */
+  .review-card{
+    border: 1px solid #c9c7c7;
+    padding: 5px;
+    margin-top:100px;
+    margin-bottom: 100px;
+  }
+  .review-desc{
+    font-family: 'Albert Sans', sans-serif;
+font-family: 'Courgette', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Zeyada', cursive;
+
+font-size: large;
+  }
+  .review-desc:before {
+    content: '"';
+  }
+  
+  .review-desc:after {
+    content: '"';
+  }

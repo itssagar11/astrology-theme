@@ -71,9 +71,8 @@
         <div class="container-fluid hero">
             <div class="row">
                 <div class="col-12 col-lg-6 col-xl-5 offset-xl-1 hero-1 ">
-                    <h1 class="mantra">AstroGyan</h1>
-                    <h2 class="sub-title">Solutions to all your Problems with the Help of the Verified Astrologers</h2>
-                    </div>
+                    <h1 class="mantra"><?php bloginfo('name'); ?></h1>
+                   </div>
                 <div class="col-md-2 col-lg-5  col-offset-lg-1 offset-xl-0 d-lg-block " >
                     <div class="iphone-mockup"><img src="<?php echo get_template_directory_uri() ?>/img/horoscope.png" class="device">
                         <div class="screen"></div>

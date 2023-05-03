@@ -1,14 +1,15 @@
 <?php
 get_header();
 $horoscope = get_queried_object();
-
+$icon=get_wp_term_image($horoscope->term_id);
 $selected_date = isset($_GET['date']) ? $_GET['date'] : date('Y-m-d');
 ?>
 <main>
     <div class="container my-4">
         <div class="row">
             <div class="col-md-8">
-                <h2><?php echo $horoscope->name ?></h2>
+            <img src="<?php echo $icon ?>" style="width: 60px; height: 70px;">
+                <!-- <h2><?php echo $horoscope->name ?></h2> -->
                 <!--  date -->
                 <form method="GET" action="<?php echo esc_url(get_term_link($horoscope)) ?>">
                     <div class="form-group my-3">
@@ -30,7 +31,7 @@ $selected_date = isset($_GET['date']) ? $_GET['date'] : date('Y-m-d');
                         $args = array(
                             'post_type' => 'horoscope',
                             'post_status' => 'publish',
-                            'tex_query'=> array(
+                            'tax_query'=> array(
                                 array(
                               [      'taxonomy'=>'horoscopetitle','field'=>'term_id','terms'=>$horoscope->term_id]
                                 )
@@ -53,7 +54,7 @@ $selected_date = isset($_GET['date']) ? $_GET['date'] : date('Y-m-d');
                         } else {
                             echo 'No horoscope available for this date.';
                         }
-                        print_r($horoscope);
+                      
                         wp_reset_postdata();
                         ?>
                     </div>
